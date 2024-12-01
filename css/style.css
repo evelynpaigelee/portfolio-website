@@ -58,6 +58,7 @@ body {
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    padding: 30px;
 }
 
 h1, h2, h3, h4 {
@@ -95,7 +96,7 @@ a {
     color: #87BBA2;
 }
 a:visited { /* visited link */
-    color: #D7B0BD;
+    color: #B3CC81;
 }
 a:active { /* selected link */
     color: #D7B0BD;
@@ -109,12 +110,17 @@ a:focus {
 
 img {
     max-width: 100%;
+    max-height: 300px;
     object-fit: cover;
 }
 
 img.social-media {
     height: 72px;
     width: 72px;
+}
+
+img.logo {
+    height: 100px;
 }
 
 .button {
