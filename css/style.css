@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.5;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+body {
+    font-family: 'Be Vietnam Pro', 'Roboto', sans-serif;
+    background-color: #ffffff;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+/*
+Colors used:
+Primary Color (Blue): #98B8C7;
+Primary Color (Green): #87BBA2;
+Secondary Color (Light Green): #B3CC81;
+Tertiary Color (Pink): #D7B0BD;
+Gray: #4F4F4F;
+Light Gray: #F7F4EE;
+White: #FFFFFF
+*/
+a {
+    color: #87BBA2;
+}
+a:visited { /* visited link */
+    color: #D7B0BD;
+}
+a:active { /* selected link */
+    color: #D7B0BD;
+}
+
+a:hover,
+a:focus {
+    color: #B3CC81;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+img.social-media {
+    height: 72px;
+    width: 72px;
+}
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #D7B0BD;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.2s opacity;
+    border: 1px solid #ffffff;
+}
+
+.button:hover {
+    background-color: #C29EAA;;
+    color: #ffffff;
+}
