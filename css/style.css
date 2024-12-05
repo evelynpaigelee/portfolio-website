@@ -47,13 +47,16 @@ table {
     border-spacing: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Be Vietnam Pro", "Roboto", serif;
     background-color: #ffffff;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    padding: 30px;
 }
 
 h1, h2, h3, h4 {
@@ -88,49 +91,105 @@ Light Gray: #F7F4EE;
 White: #FFFFFF
 */
 a {
-    color: #87BBA2;
+    color: black;
 }
 a:visited { /* visited link */
-    color: #B3CC81;
+    color: #728e6c;
 }
 a:active { /* selected link */
-    color: #D7B0BD;
+    color: black;
 }
 
 a:hover,
 a:focus {
-    color: #B3CC81;
+    color: #728e6c;
     text-decoration: underline;
 }
 
 img {
+    object-fit: cover;
     width: 100%;
-    /*max-width: 100%;*/
-    /*max-height: 300px;*/
-    /*object-fit: cover;*/
 }
 
-/*img.social-media {*/
-/*    height: 72px;*/
-/*    width: 72px;*/
-/*}*/
+img.social-media {
+    height: 72px;
+    width: 72px;
+}
 
-/*img.logo {*/
-/*    height: 100px;*/
-/*}*/
+img.logo {
+    max-width: 250px;
+}
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #D7B0BD;
-    color: #ffffff; /* needed to override the default link color */
+    background-color: white;
+    color: black; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
     transition: 0.2s opacity;
-    border: 1px solid #ffffff;
 }
 
 .button:hover {
-    background-color: #C29EAA;;
+    background-color: #728e6c;
     color: #ffffff;
+}
+
+header {
+    background: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: fixed;
+    width: 100%;
+}
+main {
+    padding-top: 196px;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    padding: 20px 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 10px;
+}
+.navigation {
+
+}
+
+#hero {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #DAE7C1;
+    display: inline-block;
+    width: 100%;
+}
+#hero h1 {
+    padding-bottom: 15px;
+}
+#work-and-projects {
+    padding: 20px 15px;
+}
+#work-and-projects h3 {
+    padding: 10px 0;
+}
+#work-and-projects a {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+#footer {
+    background: #DAE7C1;
+    text-align: center;
+    padding: 20px 15px;
+}
+#footer p {
+    padding: 10px 0;
 }
