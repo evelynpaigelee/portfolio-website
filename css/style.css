@@ -104,19 +104,20 @@ a:focus {
 }
 
 img {
-    max-width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    width: 100%;
+    /*max-width: 100%;*/
+    /*max-height: 300px;*/
+    /*object-fit: cover;*/
 }
 
-img.social-media {
-    height: 72px;
-    width: 72px;
-}
+/*img.social-media {*/
+/*    height: 72px;*/
+/*    width: 72px;*/
+/*}*/
 
-img.logo {
-    height: 100px;
-}
+/*img.logo {*/
+/*    height: 100px;*/
+/*}*/
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
