@@ -193,3 +193,42 @@ nav > ul > li > a {
 #footer p {
     padding: 10px 0;
 }
+
+#about h1 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.skills-and-tools h3 {
+    padding: 10px 0;
+}
+
+.my-story p {
+    padding: 10px 0;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.care-and-share-block {
+    display: inline-block;
+    padding: 0 10px;
+}
+.care-and-share-block div {
+    font-weight: bold;
+
+}
+#care-and-share h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+#care-and-share h2 {
+    padding: 10px 0;
+}
+#care-and-share .solution div {
+    text-align: center;
+}
+#care-and-share img {
+    padding-bottom: 20px;
+}
