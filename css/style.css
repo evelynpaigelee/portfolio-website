@@ -264,6 +264,12 @@ Medium devices (640px and larger)
         float: left;
     }
 
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
 
 }
 /* ==============================
