@@ -6,6 +6,7 @@
 	    <meta name="description" content="Brief introduction to me and my skills">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <title>About Me!</title>
     </head>
@@ -14,18 +15,20 @@
         <!--Header-->
         <header>
             <div id="header" class="container">
-                <a href="index.html">
-                    <img src="img/logo_img.png" class="logo" alt="Eve Lee Logo">
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="index.html">
+                        <img src="img/logo_img.png" class="logo" alt="Eve Lee Logo">
+                    </a>
+                    <nav>
+                        <ul class="navigation">
+                            <li><a onclick="menuToggle()" href="about.html">About</a></li>
+                            <li><a onclick="menuToggle()" href="contact.html">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
-
 
         <main>
             
@@ -59,6 +62,8 @@
                 </p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

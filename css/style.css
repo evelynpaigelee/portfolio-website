@@ -117,9 +117,24 @@ img.social-media {
 }
 
 img.logo {
-    max-width: 250px;
+    max-width: 150px;
 }
-
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle li .icon {
+    position: absolute;
+    right: 24px;
+    top: 26px;
+    font-size: 24px;
+    padding-right: 0;
+}
+.navtoggle.responsive li  {
+    display: block;
+}
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: white;
@@ -148,7 +163,7 @@ header {
     width: 100%;
 }
 main {
-    padding-top: 196px;
+    padding-top: 114px;
 }
 
 .container {
@@ -158,9 +173,7 @@ main {
 .row {
     padding: 20px 0;
 }
-nav > ul > li {
-    display: inline-block;
-}
+
 nav > ul > li > a {
     padding: 0 10px;
 }
@@ -299,7 +312,19 @@ Medium devices (640px and larger)
         display: table;
     }
 
+    img.logo {
+        max-width: 250px;
+    }
 
+    nav > ul > li {
+        display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+    }
 }
 /* ==============================
 Large devices (1024px or larger)
