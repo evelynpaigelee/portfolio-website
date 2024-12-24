@@ -23,25 +23,31 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1.5;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote::before, blockquote::after,
+q::before, q::after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -53,7 +59,7 @@ table {
 
 body {
     font-family: "Be Vietnam Pro", "Roboto", serif;
-    background-color: #ffffff;
+    background-color: #fff;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -62,6 +68,7 @@ body {
 h1, h2, h3, h4 {
     line-height: 1.4;
 }
+
 h1 {
     font-size: 2.75em;
     font-weight: 700;
@@ -76,10 +83,12 @@ h3 {
     font-size: 1.75em;
     font-weight: 400;
 }
+
 h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
+
 /*
 Colors used:
 Primary Color (Blue): #98B8C7;
@@ -93,9 +102,11 @@ White: #FFFFFF
 a {
     color: black;
 }
+
 a:visited { /* visited link */
     color: #728e6c;
 }
+
 a:active { /* selected link */
     color: black;
 }
@@ -119,12 +130,15 @@ img.social-media {
 img.logo {
     max-width: 150px;
 }
+
 .navtoggle li:not(:last-child) {
     display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
     position: relative;
 }
+
 .navtoggle li .icon {
     position: absolute;
     right: 24px;
@@ -132,9 +146,11 @@ img.logo {
     font-size: 24px;
     padding-right: 0;
 }
+
 .navtoggle.responsive li  {
     display: block;
 }
+
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: white;
@@ -149,7 +165,7 @@ img.logo {
 
 .button:hover {
     background-color: #728e6c;
-    color: #ffffff;
+    color: #fff;
     opacity: 0.5;
 
 }
@@ -158,10 +174,11 @@ header {
     background: white;
     text-align: center;
     padding: 10px 0;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
     position: fixed;
     width: 100%;
 }
+
 main {
     padding-top: 114px;
 }
@@ -177,6 +194,7 @@ main {
 nav > ul > li > a {
     padding: 0 10px;
 }
+
 .navigation {
 
 }
@@ -188,15 +206,19 @@ nav > ul > li > a {
     display: inline-block;
     width: 100%;
 }
+
 #hero h1 {
     padding-bottom: 15px;
 }
+
 #work-and-projects {
     padding: 20px 15px;
 }
+
 #work-and-projects h3 {
     padding: 10px 0;
 }
+
 #work-and-projects a {
     margin: 10px 0;
     display: inline-block;
@@ -207,6 +229,7 @@ nav > ul > li > a {
     text-align: center;
     padding: 20px 15px;
 }
+
 #footer p {
     padding: 10px 0;
 }
@@ -233,20 +256,25 @@ nav > ul > li > a {
     display: inline-block;
     padding: 0 10px;
 }
+
 .care-and-share-block div {
     font-weight: bold;
 
 }
+
 #care-and-share h1 {
     text-align: center;
     padding: 10px 0;
 }
+
 #care-and-share h2 {
     padding: 10px 0;
 }
+
 #care-and-share .solution div {
     text-align: center;
 }
+
 #care-and-share img {
     padding-bottom: 20px;
 }
@@ -254,30 +282,35 @@ nav > ul > li > a {
 .sun {
     animation: 4s color-change infinite alternate linear;
 }
+
 .cloud-front {
     animation: 30s cloud-move infinite alternate linear;
 }
+
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 @keyframes color-change {
     0% {fill: #edc655;}
     50% {fill: #fcffad;}
     100% {fill: #f76414;}
 }
+
 @keyframes cloud-move {
     from {transform: translate(0,50px);}
     to {transform: translate(200px,50px);}
 }
+
 @keyframes cloud-move-reverse {
     from {transform: translate(446px,48px);}
     to {transform: translate(100px, 48px);}
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
     header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -300,7 +333,6 @@ Medium devices (640px and larger)
         width: 50%;
     }
 
-
     [class*="col-"] {
         float: left;
         padding: 0 10px;
@@ -319,13 +351,16 @@ Medium devices (640px and larger)
     nav > ul > li {
         display: inline-block;
     }
+
     .navtoggle li:not(:last-child) {
         display: inline-block;
     }
+
     .navtoggle li:last-child {
         display: none;
     }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -333,15 +368,18 @@ Large devices (1024px or larger)
     .col-lg-7 {
         width: 58.33%;
     }
+
     .col-lg-5 {
         width: 41.66%;
     }
+
     .container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
