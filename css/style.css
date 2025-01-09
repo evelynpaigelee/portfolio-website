@@ -116,6 +116,13 @@ a:focus {
     color: #728e6c;
     text-decoration: underline;
 }
+nav a {
+    color: #728e6c;
+}
+
+a.social-media-link {
+    text-decoration: none;
+}
 
 img {
     object-fit: cover;
@@ -123,8 +130,9 @@ img {
 }
 
 img.social-media {
-    height: 72px;
-    width: 72px;
+    height: 30px;
+    width: 30px;
+    margin: 0 4px;
 }
 
 img.logo {
