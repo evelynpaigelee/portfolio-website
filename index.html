@@ -32,8 +32,9 @@
           </a>
           <nav>
             <ul class="navigation">
+              <li><a onclick="menuToggle()" href="index.html">Home</a></li>
               <li><a onclick="menuToggle()" href="about.html">About</a></li>
-              <li><a onclick="menuToggle()" href="contact.html">Contact</a></li>
+              <li><a onclick="menuToggle()" href="#footer">Contact</a></li>
               <li>
                 <a
                   href="javascript:void(0);"
@@ -54,7 +55,7 @@
         <div>
           <h1>Hi, my name is Eve Lee!</h1>
           <p>
-            I'm A UX/UI Designer, physical therapist, and creative based in San
+            I'm a UX/UI Designer, physical therapist, and creative based in San
             Francisco Bay.
           </p>
           <p>
@@ -67,6 +68,60 @@
       <!--My Work-->
       <div id="work-and-projects" class="container">
         <h2>Work &amp; Projects</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-7">
+            <picture>
+              <source
+                srcset="img/portfolio/large/careandshare_main@2x.jpg"
+                media="(min-width:768px)"
+              />
+              <img
+                src="img/portfolio/small/careandshare_main@1x.jpg"
+                alt="Care & Share Mockup"
+              />
+            </picture>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div>
+              <h3>Care &amp; Share - Caregiving App</h3>
+              <p>
+                Care &amp; Share is a caregiving application that focuses on
+                providing users with access to local resources, community, and
+                connection with discussion boards, messaging features, and
+                education in article and video format
+              </p>
+              <a href="care_and_share.html">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-7">
+            <picture>
+              <source
+                srcset="img/portfolio/large/hungryhomeeats_main@2x.jpg"
+                media="(min-width:768px)"
+              />
+              <img
+                src="img/portfolio/small/hungryhomeeats_main@1x.jpg"
+                alt="Hungry Home Eats Mockup"
+              />
+            </picture>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div>
+              <h3>Hungry Home Eats - Recipe App</h3>
+              <p>
+                Hungry Home Eats is an authentic Asian recipe app that provide
+                clean, user-friendly platform for easy access to Asian recipes
+                while enabling users to share their stories, experiences, and
+                cultures with others
+              </p>
+              <a href="#">View Project</a>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-6 col-lg-7">
             <svg
@@ -2398,59 +2453,6 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-7">
-            <picture>
-              <source
-                srcset="img/portfolio/large/careandshare_main@2x.jpg"
-                media="(min-width:768px)"
-              />
-              <img
-                src="img/portfolio/small/careandshare_main@1x.jpg"
-                alt="Care & Share Mockup"
-              />
-            </picture>
-          </div>
-          <div class="col-md-6 col-lg-5">
-            <div>
-              <h3>Care &amp; Share - Caregiving App</h3>
-              <p>
-                Care &amp; Share is a caregiving application that focuses on
-                providing users with access to local resources, community, and
-                connection with discussion boards, messaging features, and
-                education in article and video format
-              </p>
-              <a href="care_and_share.html">View Project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-7">
-            <picture>
-              <source
-                srcset="img/portfolio/large/hungryhomeeats_main@2x.jpg"
-                media="(min-width:768px)"
-              />
-              <img
-                src="img/portfolio/small/hungryhomeeats_main@1x.jpg"
-                alt="Hungry Home Eats Mockup"
-              />
-            </picture>
-          </div>
-          <div class="col-md-6 col-lg-5">
-            <div>
-              <h3>Hungry Home Eats - Recipe App</h3>
-              <p>
-                Hungry Home Eats is an authentic Asian recipe app that provide
-                clean, user-friendly platform for easy access to Asian recipes
-                while enabling users to share their stories, experiences, and
-                cultures with others
-              </p>
-              <a href="#">View Project</a>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
 
@@ -2469,25 +2471,28 @@
         </div>
         <div>
           <!--Social Media Layout and Placeholders-->
-          <p>Find Me on Social Media</p>
-          <a href="https://www.linkedin.com/in/evelynplee/" target="_blank">
+          <p>Find Me on Social Media:</p>
+          <a
+            class="social-media-link"
+            href="https://www.linkedin.com/in/evelynplee/"
+            target="_blank"
+          >
             <img
               alt="LinkedIn"
               class="social-media"
-              src="img/social_media/linkedin.svg"
+              src="img/social_media/linkedin-icon.png"
             />
-            LinkedIn
           </a>
           <a
+            class="social-media-link"
             href="https://www.instagram.com/evelynkwong/?hl=en"
             target="_blank"
           >
             <img
               alt="Instagram"
               class="social-media"
-              src="img/social_media/instagram.png"
+              src="img/social_media/instagram-icon.png"
             />
-            Instagram
           </a>
         </div>
         <h5>Copyright Evelyn Lee 2024-2025</h5>

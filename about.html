@@ -27,8 +27,9 @@
           </a>
           <nav>
             <ul class="navigation">
+              <li><a onclick="menuToggle()" href="index.html">Home</a></li>
               <li><a onclick="menuToggle()" href="about.html">About</a></li>
-              <li><a onclick="menuToggle()" href="contact.html">Contact</a></li>
+              <li><a onclick="menuToggle()" href="#footer">Contact</a></li>
               <li>
                 <a
                   href="javascript:void(0);"
@@ -47,23 +48,26 @@
       <div id="about" class="container">
         <div>
           <div>
-            <h1>About</h1>
+            <h2>About</h2>
           </div>
         </div>
-        <div class="inline-block">
-          <picture class="profile-picture">
-            <source
-              srcset="img/portfolio/large/eve_lee_profile_@2x.jpg"
-              media="(min-width:768px)"
-            />
-            <img
-              src="img/portfolio/small/eve_lee_profile_@1x.png"
-              alt="Evelyn Lee Profile Picture"
-            />
-          </picture>
+        <div class="inline-block profile-story">
+          <div>
+            <picture class="profile-picture">
+              <source
+                srcset="img/portfolio/large/eve_lee_profile_@2x.jpg"
+                media="(min-width:768px)"
+              />
+              <img
+                src="img/portfolio/small/eve_lee_profile_@1x.png"
+                alt="Evelyn Lee Profile Picture"
+              />
+            </picture>
+          </div>
+
           <div class="my-story">
             <div>
-              <h2>My Story</h2>
+              <h3>My Story</h3>
               <p>
                 Hi, I'm Eve Lee! I'm UI/UX designer passionate about crafting
                 thoughtful, beautiful solutions with user experience and design
@@ -96,10 +100,10 @@
         </div>
         <div>
           <div class="skills-and-tools">
-            <h2>Skills &amp; Tools</h2>
-            <div class="row">
+            <h3>Skills &amp; Tools</h3>
+            <div class="row skills-and-tools-row">
               <div class="col-md-6">
-                <h3>Relevant Skills</h3>
+                <h4>Relevant Skills</h4>
                 <ul>
                   <li>User Research</li>
                   <li>Interviewing</li>
@@ -112,7 +116,7 @@
                 </ul>
               </div>
               <div class="col-md-6">
-                <h3>Tools</h3>
+                <h4>Tools</h4>
                 <ul>
                   <li>Figma</li>
                   <li>Procreate</li>
@@ -139,25 +143,28 @@
         </div>
         <div>
           <!--Social Media Layout and Placeholders-->
-          <p>Find Me on Social Media</p>
-          <a href="https://www.linkedin.com/in/evelynplee/" target="_blank">
+          <p>Find Me on Social Media:</p>
+          <a
+            class="social-media-link"
+            href="https://www.linkedin.com/in/evelynplee/"
+            target="_blank"
+          >
             <img
               alt="LinkedIn"
               class="social-media"
-              src="img/social_media/linkedin.svg"
+              src="img/social_media/linkedin-icon.png"
             />
-            LinkedIn
           </a>
           <a
+            class="social-media-link"
             href="https://www.instagram.com/evelynkwong/?hl=en"
             target="_blank"
           >
             <img
               alt="Instagram"
               class="social-media"
-              src="img/social_media/instagram.png"
+              src="img/social_media/instagram-icon.png"
             />
-            Instagram
           </a>
         </div>
         <h5>Copyright Evelyn Lee 2024-2025</h5>
